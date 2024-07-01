@@ -7,8 +7,8 @@ let connection = mysql.createConnection({
     database: 'express_api'
 });
 
-connection.connect(function erro() {
-    if (!!error) {
+connection.connect(function error() {
+    if (!error) {
         console.log(error);
     } else {
         console.log('koneksi database berhasil');
